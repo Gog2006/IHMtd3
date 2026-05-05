@@ -1,0 +1,69 @@
+button {
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    border: black thin solid;
+    min-width: 1.2rem;
+    box-shadow: 0.1rem 0.1rem  black;
+    margin-right: 0.5rem;
+}
+
+button:disabled {
+    box-shadow: 0 0;
+    border-color: gray;
+}
+
+
+main {
+    border-top: black thin solid;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-wrap : wrap;
+}
+
+
+div.candidat {
+    user-select: none;
+
+    display: flex;
+    flex-basis: 10rem; /* 4 colonnes */
+    flex-grow: 1;
+
+    box-shadow: 0 0 0.2rem black;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+
+    cursor: grabbing;
+}
+
+div.candidat span.texte {
+    flex-grow: 1;
+}
+
+div.candidat:hover span.texte {
+    color: rgb(0,128,0);
+    text-decoration: underline;
+}
+
+
+div.candidat  span.valeur {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+div.candidat.vote {
+    background: rgba(192,255,192,0.5);
+    box-shadow: 0 0 0.4rem 0.2rem green;
+}
+
+main.colonne {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+main.colonne > div.candidat {
+    flex-basis: 1.2rem; /* height */
+}
