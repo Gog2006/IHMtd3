@@ -26,7 +26,7 @@ div.candidat {
     user-select: none;
 
     display: flex;
-    flex-basis: 10rem; /* 4 colonnes */
+    flex-basis: 10rem; 
     flex-grow: 1;
 
     box-shadow: 0 0 0.2rem black;
@@ -37,6 +37,7 @@ div.candidat {
     border-radius: 0.2rem;
 
     cursor: grabbing;
+    order: 0;
 }
 
 div.candidat span.texte {
@@ -65,5 +66,5 @@ main.colonne {
 }
 
 main.colonne > div.candidat {
-    flex-basis: 1.2rem; /* height */
+    flex-basis: 1.2rem; 
 }

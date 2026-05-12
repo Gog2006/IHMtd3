@@ -8,7 +8,7 @@
 
     <script type="text/javascript" src="src/js/controleur.js"></script>
     <script type="text/javascript" src="src/js/candidat.js"></script>
-
+    <script type="text/javascript" src="src/js/CandidatSpecial.js"></script>
     <script type="text/javascript" >
         let controleur ;
         let candidat ;
@@ -31,14 +31,14 @@
     <button id="trier">Trier par nombre de votes</button>
     <button id="ordreInitial">Ordre Initial</button>
     <button id="miseEnPage" >passer à 1 colonne</button>
-    <br /><span id="affTV">Nb voix = n.a.</span>
+    <br /><span id="affTV"></span>
 </nav>
 <main >
     <template>
         <div class="candidat" id="unIdUnique">
             <span class="texte"></span><span class="valeur"></span>
-            
-            <button class="moins" disabled="disabled">-</button>
+
+            <button class="moins" disabled="true">-</button>
         </div>
     </template>
 </main>
