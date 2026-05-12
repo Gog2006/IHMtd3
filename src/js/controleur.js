@@ -37,14 +37,18 @@ class Controleur {
 });
 
      let boutonTrier = document.getElementById("trier");
-boutonTrier.addEventListener("click", () => {
-    this.candidats.forEach(candidat => candidat.ordonner());
-});
+     boutonTrier.addEventListener("click", () => {
+         this.candidats.forEach(candidat => candidat.ordonner());
+         boutonTrier.disabled = true;
+         boutonOrdreInitial.disabled = false;
+     });
 
-let boutonOrdreInitial = document.getElementById("ordreInitial");
-boutonOrdreInitial.addEventListener("click", () => {
-    this.candidats.forEach(candidat => candidat.ordreInitial());
-});
+     let boutonOrdreInitial = document.getElementById("ordreInitial");
+     boutonOrdreInitial.addEventListener("click", () => {
+         this.candidats.forEach(candidat => candidat.ordreInitial());
+         boutonOrdreInitial.disabled = true;
+         boutonTrier.disabled = false;
+     });
     }
 
     ajouterUneVoix(valeurVoix) {
